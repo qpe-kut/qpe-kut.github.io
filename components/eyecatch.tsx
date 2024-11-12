@@ -9,10 +9,10 @@ export default function EyeCatch() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setTimeout((): void => {
       setIsVisible(false);
     }, 5000);
-    return () => clearTimeout(timer);
+    return (): void => clearTimeout(timer);
   }, []);
 
   const containerVariants = {
@@ -112,21 +112,26 @@ export default function EyeCatch() {
               { Icon: PieChart, label: "統計モデリング" },
               { Icon: TrendingUp, label: "経済予測" },
               { Icon: Database, label: "ビッグデータ" },
-            ].map(({ Icon, label }, index) => (
-              <motion.div
-                key={index}
-                className="flex flex-col items-center"
-                variants={iconVariants}
-              >
-                <div className="bg-white p-4 rounded-full shadow-lg mb-4">
-                  {/* mobile */}
-                  <Icon size={20} className="text-[#1B7AFE] md:hidden" />
-                  {/* PC, tablet */}
-                  <Icon size={40} className="text-[#1B7AFE] hidden md:block" />
-                </div>
-                <p className="text-gray-700 font-medium">{label}</p>
-              </motion.div>
-            ))}
+            ].map(
+              ({ Icon, label }, index: number): JSX.Element => (
+                <motion.div
+                  key={index}
+                  className="flex flex-col items-center"
+                  variants={iconVariants}
+                >
+                  <div className="bg-white p-4 rounded-full shadow-lg mb-4">
+                    {/* mobile */}
+                    <Icon size={20} className="text-[#1B7AFE] md:hidden" />
+                    {/* PC, tablet */}
+                    <Icon
+                      size={40}
+                      className="text-[#1B7AFE] hidden md:block"
+                    />
+                  </div>
+                  <p className="text-gray-700 font-medium">{label}</p>
+                </motion.div>
+              ),
+            )}
           </motion.div>
         </motion.div>
       )}

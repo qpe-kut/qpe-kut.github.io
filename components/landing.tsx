@@ -7,7 +7,7 @@ import Guide from "@/components/guide";
 
 import { Container } from "@/components/styles/container";
 
-export default function Landing() {
+export default function Landing(): JSX.Element {
   return (
     <div className="space-y-20 mb-20">
       <Cover />

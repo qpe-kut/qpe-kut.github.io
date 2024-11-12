@@ -8,7 +8,9 @@ export function Container({
   children,
 }: ContainerProps): JSX.Element {
   return (
-    <div className={`container max-w-xl mx-auto space-y-20 ${className || ""}`}>
+    <div
+      className={`container max-w-xl mx-auto px-4 md:px-0 space-y-20 ${className || ""}`}
+    >
       {children}
     </div>
   );

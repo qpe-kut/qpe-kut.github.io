@@ -9,7 +9,7 @@ export default function Researches(): JSX.Element {
         <Research
           key={index}
           title={research.title}
-          subtitle={research.subtitle}
+          /* subtitle={research.subtitle} */
           author={research.author}
           supervisor={research.supervisor}
           /*

@@ -10,7 +10,7 @@
 
 **署名の手順**
 
-まず，このリポジトリをフォーク（Fork）します．すると，自分のアカウント下に`Yanai-Lab.github.io`が作成されるので，そのリポジトリ（`<YourUserName>/Yanai-Lab.github.io`）をローカルへクローン（`git clone`）します．
+まず，このリポジトリをフォーク（Fork）します．すると，自分のアカウント下に`qpe-kut.github.io`が作成されるので，そのリポジトリ（`<YourUserName>/qpe-kut.github.io`）をローカルへクローン（`git clone`）します．
 
 クローンしたリポジトリへ移動すると，`data`というディレクトリが存在します．その中に`members.ts`ファイルがあり，そこに`members`という配列が定義されているので，配列の要素として辞書形式でご自身の情報を記載してください．
 
@@ -40,19 +40,19 @@ $ git push origin <branchName>
 
 **フォークしたリポジトリとローカルを最新の状態に保つには**
 
-オリジナルのリポジトリ（`Yanai-Lab/Yanai-Lab.github.io.git`）が更新された時，フォークしたリポジトリ（`<YourUserName>/Yanai-Lab.github.io.git`）が自動的に最新の状態になることはありません．ローカルのリポジトリも同じく．
+オリジナルのリポジトリ（`qpe-kut/qpe-kut.github.io.git`）が更新された時，フォークしたリポジトリ（`<YourUserName>/qpe-kut.github.io.git`）が自動的に最新の状態になることはありません．ローカルのリポジトリも同じく．
 
 フォークしたリポジトリとローカルのリポジトリを，オリジナルのリポジトリに合わせて手動で最新の状態にしておく必要があります．でなければ，コンフリクト等の問題が発生します．
 
 以下に手順を記します．
 
-まず，オリジナルのリポジトリ（`Yanai-Lab/Yanai-Lab.github.io.git`）をリモートリポジトリとしてローカルに追加する必要があります．
+まず，オリジナルのリポジトリ（`qpe-kut/qpe-kut.github.io.git`）をリモートリポジトリとしてローカルに追加する必要があります．
 
 ```
-$ git remote add upstream git@github.com:Yanai-Lab/Yanai-Lab.github.io.git
+$ git remote add upstream git@github.com:qpe-kut/qpe-kut.github.io.git
 ```
 
-このコマンドは`Yanai-Lab/Yanai-Lab.github.io.git`を`upstream`という名前のリモートリポジトリとしてローカルへ追加するものです．ちなみに，`<YourUserName>/Yanai-Lab.github.io.git`は`origin`という名前でローカルへ追加されています．
+このコマンドは`qpe-kut/qpe-kut.github.io.git`を`upstream`という名前のリモートリポジトリとしてローカルへ追加するものです．ちなみに，`<YourUserName>/qpe-kut.github.io.git`は`origin`という名前でローカルへ追加されています．
 
 `upstream`は常に最新の状態なので，これをローカルの`main`ブランチに反映させます．
 
@@ -64,7 +64,7 @@ $ git merge upstream/main
 
 これでローカルの`main`ブランチが最新の状態となりました．
 
-続いて，フォークしたリポジトリ（`<YourUserName>/Yanai-Lab.github.io.git`）に，先ほど最新の状態とした`main`ブランチをプッシュ（`git push`）します．
+続いて，フォークしたリポジトリ（`<YourUserName>/qpe-kut.github.io.git`）に，先ほど最新の状態とした`main`ブランチをプッシュ（`git push`）します．
 
 ```
 $ git push origin main
@@ -118,7 +118,7 @@ $ brew install node
 $ node --version
 ```
 
-その後，このリポジトリ（`Yanai-Lab/Yanai-Lab.github.io.git`）をフォーク（Fork）し，フォークしたリポジトリ（`<YourUserName>/Yanai-Lab.github.io.git`）をローカルへクローン（`git clone`）します．作業ディレクトリで以下のコマンドを実行してください．
+その後，このリポジトリ（`qpe-kut/qpe-kut.github.io.git`）をフォーク（Fork）し，フォークしたリポジトリ（`<YourUserName>/qpe-kut.github.io.git`）をローカルへクローン（`git clone`）します．作業ディレクトリで以下のコマンドを実行してください．
 
 ```
 $ npm install

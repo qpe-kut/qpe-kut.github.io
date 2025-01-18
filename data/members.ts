@@ -16,7 +16,7 @@ export const members = [
     image:          アイコンのファイル名(`/public/imgs/icons/`へ保存しておく),
     description:    紹介,
     github:         GitHubのユーザ名,
-    graduationYear: 卒業予定年度
+    graduationYear: 卒業予定年
   */
 
   {

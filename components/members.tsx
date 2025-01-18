@@ -53,7 +53,7 @@ export default function Members(): JSX.Element {
           .sort()
           .map((year) => (
             <div key={year}>
-              <div className="font-bold">{year}年度卒業予定</div>
+              <div className="font-bold">{year}年卒業予定</div>
               <Grid>
                 {studentsByYear[Number(year)]?.map((student, index) => (
                   <GridElement key={index}>

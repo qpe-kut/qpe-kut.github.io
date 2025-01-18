@@ -4,7 +4,7 @@ import Research from "@/components/research";
 
 export default function Researches(): JSX.Element {
   return (
-    <div>
+    <div className='space-y-6'>
       {researches.map((research, index: number) => (
         <Research
           key={index}
